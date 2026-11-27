@@ -73,3 +73,9 @@ A web-based banking application built with HTML, CSS and JavaScript.
 </a>
 
 </div>
+
+<!-- PROJECTS:START -->
+## Public Repositories
+
+- [b](https://github.com/JamalNewland/b) — Not specified
+<!-- PROJECTS:END -->
