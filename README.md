@@ -49,3 +49,9 @@ A web-based banking application built with HTML, CSS and JavaScript.
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JamalNewland&layout=compact&bg_color=0D1117&title_color=00D9FF&text_color=CBD5E1&border_color=8B5CF6" width="49%"/>
 
 </div>
+
+## 3D Contribution Skyline
+
+<div align="center">
+  <img src="./profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D Contribution Skyline">
+</div>
