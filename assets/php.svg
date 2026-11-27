@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="170" viewBox="0 0 900 170">
+
+  <defs>
+    <linearGradient id="border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00D9FF"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+
+    <linearGradient id="background">
+      <stop offset="0%" stop-color="#0D1117"/>
+      <stop offset="100%" stop-color="#161B22"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="10" y="10" width="880" height="150" rx="14"
+        fill="url(#background)" stroke="url(#border)" stroke-width="2"/>
+
+  <g font-family="Arial, sans-serif">
+
+    <text x="35" y="45" fill="#00D9FF" font-size="24" font-weight="bold">
+      02 / PHP Fundamentals
+    </text>
+
+    <text x="35" y="77" fill="#CBD5E1" font-size="17">
+      Backend development and programming logic.
+    </text>
+
+    <text x="35" y="110" fill="#A78BFA" font-size="16">
+      PHP
+    </text>
+
+    <circle cx="40" cy="135" r="4" fill="#8B5CF6"/>
+
+    <text x="53" y="140" fill="#94A3B8" font-size="14">
+      IN PROGRESS
+    </text>
+
+    <text x="860" y="140" text-anchor="end" fill="#00D9FF" font-size="14">
+      VIEW PROJECT →
+    </text>
+
+  </g>
+</svg>
