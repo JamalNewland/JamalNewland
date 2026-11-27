@@ -1,0 +1,92 @@
+name: Update Public Projects
+
+on:
+  schedule:
+    - cron: "0 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-projects:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate project list
+        env:
+          GH_TOKEN: ${{ github.token }}
+          USERNAME: ${{ github.repository_owner }}
+        run: |
+          python3 <<'PY'
+          import os
+          import json
+          import subprocess
+          from pathlib import Path
+
+          username = os.environ["USERNAME"]
+
+          result = subprocess.check_output([
+              "gh", "api", "--paginate", "--slurp",
+              f"users/{username}/repos?type=owner&per_page=100"
+          ])
+
+          pages = json.loads(result)
+          repos = [repo for page in pages for repo in page]
+
+          repos = [
+              repo for repo in repos
+              if not repo["private"]
+              and not repo["fork"]
+              and not repo["archived"]
+              and repo["name"].lower() != username.lower()
+          ]
+
+          repos.sort(
+              key=lambda repo: repo["updated_at"],
+              reverse=True
+          )
+
+          lines = ["## Public Repositories", ""]
+
+          for repo in repos:
+              name = repo["name"]
+              url = repo["html_url"]
+              language = repo["language"] or "Not specified"
+              lines.append(f"- [{name}]({url}) — {language}")
+
+          if not repos:
+              lines.append("New public projects coming soon.")
+
+          path = Path("README.md")
+          content = path.read_text()
+
+          start = "<!-- PROJECTS:START -->"
+          end = "<!-- PROJECTS:END -->"
+
+          section = start + "\n" + "\n".join(lines) + "\n" + end
+
+          if start in content and end in content:
+              before = content.split(start, 1)[0]
+              after = content.split(end, 1)[1]
+              content = before + section + after
+          else:
+              content = content.rstrip() + "\n\n" + section + "\n"
+
+          path.write_text(content)
+          PY
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+
+          if ! git diff --cached --quiet; then
+            git commit -m "Update public projects automatically"
+            git pull --rebase origin main
+            git push
+          fi
