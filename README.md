@@ -55,3 +55,15 @@ A web-based banking application built with HTML, CSS and JavaScript.
 <div align="center">
   <img src="./profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D Contribution Skyline">
 </div>
+
+## Featured Projects
+
+<div align="center">
+  <img src="./assets/projects.svg" width="100%" alt="Featured Projects">
+</div>
+
+<p align="center">
+  <a href="https://github.com/JamalNewland/mijn-bank">East Blue Bank</a> •
+  <a href="https://github.com/JamalNewland/php-huiswerk">PHP Fundamentals</a> •
+  <a href="https://github.com/JamalNewland/OpdrachtenHTMLCSS">Web Development</a>
+</p>

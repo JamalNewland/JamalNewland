@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="510" viewBox="0 0 900 510">
+
+  <defs>
+    <linearGradient id="border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00D9FF"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+
+    <linearGradient id="background">
+      <stop offset="0%" stop-color="#0D1117"/>
+      <stop offset="100%" stop-color="#161B22"/>
+    </linearGradient>
+  </defs>
+
+  <g font-family="Arial, sans-serif">
+
+    <!-- East Blue Bank -->
+    <rect x="10" y="10" width="880" height="150" rx="14"
+          fill="url(#background)" stroke="url(#border)" stroke-width="2"/>
+
+    <text x="35" y="45" fill="#00D9FF" font-size="24" font-weight="bold">
+      01 / East Blue Bank
+    </text>
+
+    <text x="35" y="77" fill="#CBD5E1" font-size="17">
+      Banking application and money transfers.
+    </text>
+
+    <text x="35" y="110" fill="#A78BFA" font-size="16">
+      HTML  /  CSS  /  JavaScript
+    </text>
+
+    <circle cx="40" cy="135" r="4" fill="#00D9FF"/>
+    <text x="53" y="140" fill="#94A3B8" font-size="14">
+      IN DEVELOPMENT
+    </text>
+
+    <!-- PHP Fundamentals -->
+    <rect x="10" y="180" width="880" height="150" rx="14"
+          fill="url(#background)" stroke="url(#border)" stroke-width="2"/>
+
+    <text x="35" y="215" fill="#00D9FF" font-size="24" font-weight="bold">
+      02 / PHP Fundamentals
+    </text>
+
+    <text x="35" y="247" fill="#CBD5E1" font-size="17">
+      Backend development and programming logic.
+    </text>
+
+    <text x="35" y="280" fill="#A78BFA" font-size="16">
+      PHP
+    </text>
+
+    <circle cx="40" cy="305" r="4" fill="#8B5CF6"/>
+    <text x="53" y="310" fill="#94A3B8" font-size="14">
+      IN PROGRESS
+    </text>
+
+    <!-- Web Development -->
+    <rect x="10" y="350" width="880" height="150" rx="14"
+          fill="url(#background)" stroke="url(#border)" stroke-width="2"/>
+
+    <text x="35" y="385" fill="#00D9FF" font-size="24" font-weight="bold">
+      03 / Web Development
+    </text>
+
+    <text x="35" y="417" fill="#CBD5E1" font-size="17">
+      Responsive and interactive website development.
+    </text>
+
+    <text x="35" y="450" fill="#A78BFA" font-size="16">
+      HTML  /  CSS  /  JavaScript
+    </text>
+
+    <circle cx="40" cy="475" r="4" fill="#8B5CF6"/>
+    <text x="53" y="480" fill="#94A3B8" font-size="14">
+      IN PROGRESS
+    </text>
+
+  </g>
+</svg>
