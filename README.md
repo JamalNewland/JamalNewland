@@ -39,3 +39,13 @@ A web-based banking application built with HTML, CSS and JavaScript.
 - Clear transaction feedback
 
 **Status:** In Development
+
+## GitHub Statistics
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=JamalNewland&show_icons=true&bg_color=0D1117&title_color=00D9FF&text_color=CBD5E1&icon_color=8B5CF6&border_color=8B5CF6" width="49%"/>
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JamalNewland&layout=compact&bg_color=0D1117&title_color=00D9FF&text_color=CBD5E1&border_color=8B5CF6" width="49%"/>
+
+</div>
