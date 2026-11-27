@@ -1,2 +1,3 @@
-# JamalNewland-
-The beginning of something extraordinary
+<div align="center">
+  <img src="./assets/banner.svg" width="100%" alt="Developer profile banner">
+</div>
